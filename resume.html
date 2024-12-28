@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Adedayo Sanni- Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .main h2 {
+            color: #333;
+        }
+        .main p {
+            line-height: 1.6;
+        }
+        .main ul {
+            list-style: none;
+            padding: 0;
+        }
+        .main ul li {
+            background: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: #77aaff 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Paul Adedayo Sanni</h1>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                <li><i class="fas fa-phone"></i> 09160673902, 08132528696</li>
+                <li><a href="https://www.linkedin.com/in/paul-sanni-252160220/" class="icon brands fa-linkedin-f"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="mailto:Adedayosanni42@gmail.com" class="icon solid fa-envelope"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://github.com/MASTERDHARYOR" class="icon brands fa-github"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+            </ul>
+            </ul>
+        </div>
+    </header>
+    <div class="container main">
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Data Analyst with a keen interest in extracting actionable insights from complex data sets. Skilled in Python, SQL, and Power BI, with a solid foundation in data visualization and analysis. Focused on leveraging data to drive business decisions, enhance marketing strategies, and improve operational efficiency. Committed to continuous learning and applying data science methodologies to real-world problems.</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <h3>Technical Skills:</h3>
+            <ul>
+                <li>Programming: Python, SQL</li>
+                <li>Data Analysis Tools: Power BI, Tableau</li>
+                <li>Data Practices: Exploratory Data Analysis (EDA), Data Cleaning, Basic Machine Learning</li>
+            </ul>
+            <h3>Soft Skills:</h3>
+            <ul>
+                <li>Analytical Thinking</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Team Collaboration</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <h3>Data Analyst Intern | [Meriskill]</h3>
+            <p>[November 2024 - December 2024]</p>
+            <ul>
+                <li>Conducted detailed analysis on marketing campaigns, resulting in a 15% increase in campaign ROI through data-driven insights.</li>
+                <li>Developed interactive dashboards in Power BI, enhancing data accessibility and decision-making processes for marketing teams.</li>
+                <li>Collaborated with cross-functional teams to interpret data and translate findings into strategic business recommendations.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p><strong>Bachelor's Degree in Insurance</strong></p>
+            <p>Lagos State University, Lagos, Nigeria</p>
+            <p>Graduation: August 27, 2024</p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <h3>Marketing Campaign Dashboard</h3>
+            <p>Tools: Power BI, Excel</p>
+            <p>Role: Data Analyst</p>
+            <p>Developed a comprehensive dashboard to track campaign performance, profitability, and customer behavior. Linked to GitHub for professional showcase.</p>
+            <h3>Appointment Scheduling Analysis for the Ministry of Health</h3>
+            <p>Tools: Power BI</p>
+            <p>Role: Data Analyst</p>
+            <p>Analyzed appointment data to identify trends and waiting times, providing recommendations to improve healthcare service delivery.</p>
+        </section>
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Data Science Specialization | Coursera</li>
+                <li>Machine Learning | edX</li>
+                <li>[Certification Name] | Forage</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Additional Information</h2>
+            <h3>Languages:</h3>
+            <p>English</p>
+            <h3>Publications:</h3>
+            <p><a href="https://masterblogspot.wordpress.com">"Building the Total Youth" - Master Blogspot</a></p>
+            <p>An article emphasizing youth empowerment through innovation and community engagement.</p>
+            <h3>Awards:</h3>
+            <ul>
+                <li>Best Data Analysis Project</li>
+                <li>Certificate of Excellence in Data Analytics Training</li>
+                <li>Top Performing Intern, Forage</li>
+            
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
+<script>
+    function downloadResumeAsImage() {
+        html2canvas(document.body).then(function(canvas) {
+            var link = document.createElement('a');
+            link.download = 'resume.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        });
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<button onclick="downloadResumeAsImage()">Download Resume as Image</button>
