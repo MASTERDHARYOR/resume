@@ -71,8 +71,6 @@
                 <li><a href="mailto:Adedayosanni42@gmail.com" class="icon solid fa-envelope"><i class="fas fa-envelope"></i> Email</a></li>
                 <li><a href="https://github.com/MASTERDHARYOR" class="icon brands fa-github"><i class="fab fa-github"></i> GitHub</a></li>
             </ul>
-            </ul>
-            </ul>
         </div>
     </header>
     <div class="container main">
@@ -143,21 +141,21 @@
                 <li>Best Data Analysis Project</li>
                 <li>Certificate of Excellence in Data Analytics Training</li>
                 <li>Top Performing Intern, Forage</li>
-            
             </ul>
         </section>
     </div>
+    <button onclick="downloadResumeAsImage()">Download Resume as Image</button>
+    <script>
+        function downloadResumeAsImage() {
+            html2canvas(document.body).then(function(canvas) {
+                var link = document.createElement('a');
+                link.download = 'resume.png';
+                link.href = canvas.toDataURL();
+                link.click();
+                alert('The resume has been downloaded as an image.');
+            });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </body>
 </html>
-<script>
-    function downloadResumeAsImage() {
-        html2canvas(document.body).then(function(canvas) {
-            var link = document.createElement('a');
-            link.download = 'resume.png';
-            link.href = canvas.toDataURL();
-            link.click();
-        });
-    }
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-<button onclick="downloadResumeAsImage()">Download Resume as Image</button>
